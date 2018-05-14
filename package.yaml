@@ -1,0 +1,25 @@
+name: sdl2-fps
+version: '0.0.0'
+github: jxv/sdl2-fps
+license: BSD3
+category: Game
+synopsis: Run of the mill, frames per second timer implementation
+description: Run of the mill, frames per second timer implementation
+maintainer: Joe Vargas
+copyright: 2018 Joe Vargas
+extra-source-files:
+- package.yaml
+- README.md
+- stack.yaml
+ghc-options: -Wall
+default-extensions:
+- LambdaCase
+- NamedFieldPuns
+- ScopedTypeVariables
+- OverloadedStrings
+- DefaultSignatures
+library:
+  dependencies:
+    - base >=4.7 && <5
+    - sdl2 >= 2.4.0.1 && <2.5
+  source-dirs: library
