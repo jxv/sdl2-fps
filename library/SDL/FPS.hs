@@ -32,7 +32,7 @@ endFrameDebug fps startTicks = liftIO $ do
   let diff = (endTicks - startTicks) * fps'
   let ms = (msps - diff) `div` fps'
   when (msps > diff) $ SDL.delay (fromIntegral ms)
-  putStrLn $ show fps ++ " fps - delay " ++ show ms ++ " ms"
+  putStrLn $ show fps ++ " fps - before delay " ++ show (endTicks - startTicks) ++ " ms" ++ " with expected max " ++ show (msps `div` fps') ++ " ms"
   where
     fps' = fromIntegral fps
 
