@@ -14,6 +14,8 @@ class Monad m => FPS m where
   default endFrame :: MonadIO m => Int -> Word32 -> m ()
   endFrame = endFrame'
 
+instance FPS IO
+
 -- | `endFrame`'s default definition
 endFrame' :: MonadIO m => Int -> Word32 -> m ()
 endFrame' fps startTicks = liftIO $ do

@@ -2,10 +2,10 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e573a8ac661cd4af6ad7206f6d3e274195a2ada8c525eb6182437c60ba6ebc2c
+-- hash: 3c098eaee6f1e9b78558e7b8441d3c074141aa350b1e596c0505f33a22a83ceb
 
 name:           sdl2-fps
-version:        0.0.1
+version:        0.0.2
 synopsis:       Run of the mill, frames per second timer implementation
 description:    Run of the mill, frames per second timer implementation
 category:       Game
